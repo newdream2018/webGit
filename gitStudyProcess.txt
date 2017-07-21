@@ -1,0 +1,151 @@
+一、git基本命令操作：
+
+	0.Windows上安装Git：
+    	$ git config --global user.name "Your Name"
+    	$ git config --global user.email "email@example.com"
+      		git config命令的--global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。
+
+	1.创建一个git版本库:
+		$ mkdir learngit	//创建目录learngit
+		$ cd learngit		//进入目录到learngit		$ cd .. 上级目录名
+		$ pwd				//用于显示当前目录
+
+	2.通过git init命令把这个目录变成Git可以管理的仓库：
+		$ git init
+		Initialized empty Git repository in /Users/michael/learngit/.git/
+
+	3.把文件添加到版本库:(一定要放到learngit目录下（子目录也行），因为这是一个Git仓库，放到其他地方Git再厉害也找不到这个文件。)
+		$ git add readme.txt		(告诉Git，把文件readme.txt添加到仓库)
+		$ git commit -m "wrote a readme file"		(告诉Git，把文件readme.txt提交到仓库; -m后面输入的是本次提交的说明，可以输入任意内容，当然最好是有意义的)
+
+	4.git status掌握仓库当前的状态，git diff查看修改内容：
+		对文件作了什么修改后，再把它提交到仓库就放心多了，提交修改和提交新文件是一样的两步，第一步是git add，第二步git commit -m "xxx"
+
+	5.版本回退：
+		a.用git log命令查看历史记录:
+			a5b8a219f0fd8fdd057ad871ef8811dc2790ed3b 5、a-查看历史记录
+			89c474607d55e4b77e631f2ec842d41e5376e54a 4、掌握仓库当前状态，查看修改内容
+			445678d782078ae90a30b82886c271230dcc1101 把文件添加提交到版本库
+			a5c61a437f03979237399b9969d89067f3f7aecf 1、创建一个git版本库
+			前面的一串数字是commit id（版本号），可以根据commit id（版本号）回到以前任意操作的文件。
+
+			如果嫌输出信息太多，看得眼花缭乱的，可以试试加上--pretty=oneline参数：
+					$ git log --pretty=oneline
+	
+		b.用git reset --hard HEAD^ 进行版本回退：
+			在Git中，用HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100；
+
+		c.已经回退到上一版本，但是现在又想回去，用$ git reset --hard commit id
+			没有退出命令行窗口，找到之前git log命令下commit id;
+			版本号没必要写全，前几位就可以了，Git会自动去找。当然也不能只写前一两位，因为Git可能会找到多个版本号，就无法确定是哪一个了。
+
+		d.若已经退出命令窗口，git reflog用来记录你的每一次命令，找到commit id
+
+		e.总结
+			HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。
+
+			穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。
+
+			要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
+
+	6.工作区（Working Directory）和暂存区（stage）
+
+		版本库（Repository）
+		工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。
+		Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。
+
+		第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区；
+		第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。
+
+		因为我们创建Git版本库时，Git自动为我们创建了唯一一个master分支，所以，现在，git commit就是往master分支上提交更改。
+		你可以简单理解为，需要提交的文件修改通通放到暂存区，然后，一次性提交暂存区的所有修改。
+
+	7.管理修改（Git跟踪并管理的是修改，而非文件）
+		第一次修改 -> git add -> 第二次修改 -> git commit
+		Git管理的是修改，当你用git add命令后，在工作区的第一次修改被放入暂存区，准备提交，
+		但是，在工作区的第二次修改并没有放入暂存区，
+		所以，git commit只负责把暂存区的修改提交了，也就是第一次的修改被提交了，第二次的修改不会被提交。
+
+		那怎么提交第二次修改呢？
+		你可以继续git add再git commit，也可以别着急提交第一次修改，先git add第二次修改，再git commit，就相当于把两次修改合并后一块提交了：
+		第一次修改 -> git add -> 第二次修改 -> git add -> git commit
+
+		每次修改，如果不add到暂存区，那就不会加入到commit中。
+
+	8.撤销修改
+		命令git checkout -- <file>意思就是，把<file>文件在工作区的修改全部撤销，这里有两种情况：
+		一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
+		一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
+		总之，就是让这个文件回到最近一次git commit或git add时的状态。
+
+
+		场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
+
+		场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。
+
+		场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
+
+	9.删除文件
+		rm命令删除工作区文件，后面两种情形操作：
+			a.确实要从版本库中删除该文件，那就用命令git rm删掉，并且git commit
+			b.删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本：$ git checkout -- <file>
+
+		命令git rm用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，
+		但是要小心，你只能恢复文件到最新版本（reset命令），你会丢失最近一次提交后你修改的内容。
+
+二、远程仓库
+
+	0.注册github账号
+		第1步：创建SSH Key。在用户主目录下，看看有没有.ssh目录，
+			  	如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。
+				如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：
+					$ ssh-keygen -t rsa -C "youremail@example.com"
+			id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。
+	
+		第2步：登陆GitHub，打开“Account settings”，“SSH Keys”页面：
+				然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容。
+	
+	1.添加远程仓库
+		你已经在本地创建了一个Git仓库后，又想在GitHub创建一个Git仓库，并且让这两个仓库进行远程同步，
+		这样，GitHub上的仓库既可以作为备份，又可以让其他人通过该仓库来协作，真是一举多得。
+
+		a.登陆GitHub，然后，在右上角找到“Create a new repo”按钮，创建一个新的仓库
+				在GitHub上的这个learngit仓库还是空的，GitHub告诉我们，可以从这个仓库克隆出新的仓库，
+				也可以把一个已有的本地仓库与之关联，然后，把本地仓库的内容推送到GitHub仓库。
+		
+		b.GitHub的提示，在本地的learngit仓库下运行命令：
+		 	$ git remote add origin git@github.com:自己的GitHub账户名/learngit.git
+		添加后，远程库的名字就是origin，这是Git默认的叫法，也可以改成别的，但是origin这个名字一看就知道是远程库。
+
+		c.把本地库的所有内容推送到远程库上：
+				$ git push -u origin master
+			把本地库的内容推送到远程，用git push命令，实际上是把当前分支master推送到远程。
+		由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，
+		还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
+
+		d.从现在起，只要本地作了提交，就可以通过命令：
+					$ git push origin master
+		把本地master分支的最新修改推送至GitHub
+
+	
+	2.从远程库克隆
+		从零开发，那么最好的方式是先创建远程库，然后，从远程库克隆。
+
+		a.登陆GitHub，创建一个新的仓库，名字叫gitskills。(勾选Initialize this repository with a README)
+
+		b.远程库已经准备好了，下一步是用命令git clone克隆一个本地库：
+				$ git clone git@github.com:michaelliao/gitskills.git
+				Cloning into 'gitskills'...
+				remote: Counting objects: 3, done.
+				remote: Total 3 (delta 0), reused 0 (delta 0)
+				Receiving objects: 100% (3/3), done.                        ///////////
+
+				$ cd gitskills
+				$ ls
+					README.md
+
+		要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。
+		Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。
+
+		c.克隆到本地版本库后，修改后可以上传至github：
+				$ git push origin master
