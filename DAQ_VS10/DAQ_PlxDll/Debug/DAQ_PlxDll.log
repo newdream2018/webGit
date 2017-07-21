@@ -1,0 +1,35 @@
+﻿生成启动时间为 2017/7/12 20:28:09。
+     1>项目“F:\文件备份\DAQ_VS10\DAQ_PlxDll\DAQ_PlxDll.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D DAQ_PLXDLL_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DAQ_PlxDll.cpp
+         DAQ_PlxDll.cpp
+     1>f:\文件备份\daq_vs10\daq_plxdll\daq_plxdll.cpp(416): warning C4800: “ViBoolean”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>f:\文件备份\daq_vs10\daq_plxdll\daq_plxdll.cpp(420): warning C4800: “ViBoolean”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>f:\文件备份\daq_vs10\daq_plxdll\daq_plxdll.cpp(431): warning C4305: “=”: 从“__int64”到“ViUInt32”截断
+     1>f:\文件备份\daq_vs10\daq_plxdll\daq_plxdll.cpp(431): warning C4309: “=”: 截断常量值
+     1>f:\文件备份\daq_vs10\daq_plxdll\daq_plxdll.cpp(780): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : 参见“fopen”的声明
+     1>f:\文件备份\daq_vs10\daq_plxdll\daq_plxdll.cpp(784): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\stdlib.h(937) : 参见“itoa”的声明
+     1>f:\文件备份\daq_vs10\daq_plxdll\daq_plxdll.cpp(881): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : 参见“fopen”的声明
+     1>f:\文件备份\daq_vs10\daq_plxdll\daq_plxdll.cpp(885): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\stdlib.h(937) : 参见“itoa”的声明
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\文件备份\DAQ_VS10\Debug\DAQ_PlxDll.dll" /INCREMENTAL /NOLOGO kernel32.lib PlxApi.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"Exports.def" /MANIFEST /ManifestFile:"Debug\DAQ_PlxDll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\文件备份\DAQ_VS10\Debug\DAQ_PlxDll.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\文件备份\DAQ_VS10\Debug\DAQ_PlxDll.lib" /MACHINE:X86 /DLL Debug\ConsFunc.obj
+         Debug\DAQ_Control.obj
+         Debug\DAQ_PlxDll.obj
+         Debug\DllMain.obj
+         Debug\FileLogger.obj
+         Debug\Global.obj
+         Debug\PlxInit.obj
+         Debug\Sinx.obj
+         Debug\StdAfx.obj
+         DAQ_PlxDll.vcxproj -> F:\文件备份\DAQ_VS10\Debug\DAQ_PlxDll.dll
+       Manifest:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\mt.exe /nologo /verbose /out:"F:\文件备份\DAQ_VS10\Debug\DAQ_PlxDll.dll.manifest" /manifest Debug\DAQ_PlxDll.dll.intermediate.manifest
+     1>已完成生成项目“F:\文件备份\DAQ_VS10\DAQ_PlxDll\DAQ_PlxDll.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:12.32

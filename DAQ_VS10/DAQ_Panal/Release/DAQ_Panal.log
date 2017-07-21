@@ -1,0 +1,46 @@
+﻿Build started 2017-6-11 14:19:14.
+     1>Project "G:\Backup\2017项目相关\DAQ_VS10\DAQ_Panal\DAQ_Panal.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\DAQ_Panal.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\DAQ_Panal.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\DAQ_Panal.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt DaqControl.cpp DAQ_Panal.cpp DAQ_PanalDoc.cpp DAQ_PanalView.cpp DataChoose.cpp Global.cpp MainFrm.cpp MyButton.cpp WaveCanvas.cpp
+         DaqControl.cpp
+         DAQ_Panal.cpp
+         DAQ_PanalDoc.cpp
+         DAQ_PanalView.cpp
+         DataChoose.cpp
+         Global.cpp
+         MainFrm.cpp
+         MyButton.cpp
+         WaveCanvas.cpp
+       ResourceCompile:
+         All outputs are up-to-date.
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /IRelease\ /nologo /fo"Release\DAQ_Panal.res" DAQ_Panal.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\Backup\2017项目相关\DAQ_VS10\Release\DAQ_Panal.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\Release DAQ_PlxDll.lib /MANIFEST /ManifestFile:"Release\DAQ_Panal.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\Backup\2017项目相关\DAQ_VS10\Release\DAQ_Panal.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\Backup\2017项目相关\DAQ_VS10\Release\DAQ_Panal.lib" /MACHINE:X86 Release\DAQ_Panal.res
+         Release\DaqControl.obj
+         Release\DAQ_Panal.obj
+         Release\DAQ_PanalDoc.obj
+         Release\DAQ_PanalView.obj
+         Release\DataChoose.obj
+         Release\Global.obj
+         Release\MainFrm.obj
+         Release\MyButton.obj
+         Release\stdafx.obj
+         Release\WaveCanvas.obj
+         Generating code
+         Finished generating code
+         DAQ_Panal.vcxproj -> G:\Backup\2017项目相关\DAQ_VS10\Release\DAQ_Panal.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"G:\Backup\2017项目相关\DAQ_VS10\Release\DAQ_Panal.exe;#1" /manifest Release\DAQ_Panal.exe.intermediate.manifest "C:\Program Files\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Release\DAQ_Panal.unsuccessfulbuild".
+         Touching "Release\DAQ_Panal.lastbuildstate".
+     1>Done Building Project "G:\Backup\2017项目相关\DAQ_VS10\DAQ_Panal\DAQ_Panal.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.65

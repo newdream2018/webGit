@@ -1,0 +1,25 @@
+LIBRARY "DAQ_PlxDll.dll"
+
+EXPORTS
+
+DAQ_init
+DAQ_InitWithOptions
+DAQ_close
+DAQ_SetAttributeViInt32
+DAQ_SetAttributeViString
+DAQ_SetAttributeViSession
+DAQ_ConfigureAcquisitionType
+DAQ_ConfigureAcquisitionRecord
+DAQ_ConfigureChannel
+DAQ_ConfigureTrigger
+DAQ_ConfigureEdgeTriggerSource
+DAQ_ConfigureTriggerModifier
+DAQ_SampleRate
+DAQ_InitiateAcquisition
+DAQ_AcquisitionStatus
+DAQ_FetchWaveform
+DAQ_FetchMinMaxWaveform
+DAQ_FetchWholeWaveform
+DAQ_FetchWaveformMeasurement
+DAQ_Abort
+DAQ_ResetAcquisition

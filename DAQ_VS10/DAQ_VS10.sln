@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DAQ_Panal", "DAQ_Panal\DAQ_Panal.vcxproj", "{82BBE201-095F-40C0-AC3F-2B8DC070FB06}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CD9EB0F5-82F0-4F8F-A6FC-5CECFD35A1B8} = {CD9EB0F5-82F0-4F8F-A6FC-5CECFD35A1B8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DAQ_PlxDll", "DAQ_PlxDll\DAQ_PlxDll.vcxproj", "{CD9EB0F5-82F0-4F8F-A6FC-5CECFD35A1B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82BBE201-095F-40C0-AC3F-2B8DC070FB06}.Debug|Win32.ActiveCfg = Debug|Win32
+		{82BBE201-095F-40C0-AC3F-2B8DC070FB06}.Debug|Win32.Build.0 = Debug|Win32
+		{82BBE201-095F-40C0-AC3F-2B8DC070FB06}.Release|Win32.ActiveCfg = Release|Win32
+		{82BBE201-095F-40C0-AC3F-2B8DC070FB06}.Release|Win32.Build.0 = Release|Win32
+		{CD9EB0F5-82F0-4F8F-A6FC-5CECFD35A1B8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CD9EB0F5-82F0-4F8F-A6FC-5CECFD35A1B8}.Debug|Win32.Build.0 = Debug|Win32
+		{CD9EB0F5-82F0-4F8F-A6FC-5CECFD35A1B8}.Release|Win32.ActiveCfg = Release|Win32
+		{CD9EB0F5-82F0-4F8F-A6FC-5CECFD35A1B8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,33 @@
+2017-06-26 09:29:40.450 [INFO] DAQ_InitWithOptions, ResourceName = PXI::13::INSTER
+2017-06-26 09:29:40.450 [INFO] DAQ_InitWithOptions, ResourceName = PXI::13::INSTER, ´ò¿ªÊ§°Ü£¡
+2017-06-26 09:29:40.450 [INFO] DAQ_InitWithOptions, ResourceName = PXI::13::INSTER, Vi = 20842504
+2017-06-26 09:29:40.450 [INFO] WriteDWord: Adress = 0x58c, Data = 0x1
+2017-06-26 09:29:40.466 [INFO] WriteDWord: Adress = 0x594, Data = 0x0
+2017-06-26 09:29:40.482 [INFO] WriteDWord: Adress = 0x594, Data = 0x1
+2017-06-26 09:29:40.497 [INFO] WriteDWord: Adress = 0x594, Data = 0x0
+2017-06-26 09:29:40.515 [INFO] WriteDWord: Adress = 0x58c, Data = 0x2
+2017-06-26 09:29:40.530 [INFO] WriteDWord: Adress = 0x594, Data = 0x0
+2017-06-26 09:29:40.546 [INFO] WriteDWord: Adress = 0x594, Data = 0x1
+2017-06-26 09:29:40.571 [INFO] WriteDWord: Adress = 0x594, Data = 0x0
+2017-06-26 09:29:40.586 [INFO] WriteDWord: Adress = 0x58c, Data = 0x3
+2017-06-26 09:29:40.604 [INFO] WriteDWord: Adress = 0x594, Data = 0x0
+2017-06-26 09:29:40.619 [INFO] WriteDWord: Adress = 0x594, Data = 0x1
+2017-06-26 09:29:40.635 [INFO] WriteDWord: Adress = 0x594, Data = 0x0
+2017-06-26 09:29:40.653 [INFO] WriteDWord: Adress = 0x58c, Data = 0x4
+2017-06-26 09:29:40.668 [INFO] WriteDWord: Adress = 0x594, Data = 0x0
+2017-06-26 09:29:40.686 [INFO] WriteDWord: Adress = 0x594, Data = 0x1
+2017-06-26 09:29:40.701 [INFO] WriteDWord: Adress = 0x594, Data = 0x0
+2017-06-26 09:29:40.711 [INFO] WriteDWord: Adress = 0x58c, Data = 0x5
+2017-06-26 09:29:40.721 [INFO] WriteDWord: Adress = 0x594, Data = 0x0
+2017-06-26 09:29:40.741 [INFO] WriteDWord: Adress = 0x594, Data = 0x1
+2017-06-26 09:29:40.751 [INFO] WriteDWord: Adress = 0x594, Data = 0x0
+2017-06-26 09:29:40.761 [INFO] WriteDWord: Adress = 0x58c, Data = 0x6
+2017-06-26 09:29:40.771 [INFO] WriteDWord: Adress = 0x594, Data = 0x0
+2017-06-26 09:29:40.789 [INFO] WriteDWord: Adress = 0x594, Data = 0x1
+2017-06-26 09:29:40.799 [INFO] WriteDWord: Adress = 0x594, Data = 0x0
+2017-06-26 09:29:40.809 [INFO] WriteDWord: Adress = 0x4f4, Data = 0x200b70
+2017-06-26 09:29:40.809 [INFO] WriteDWord: Adress = 0x504, Data = 0x0
+2017-06-26 09:29:40.809 [INFO] WriteDWord: Adress = 0x504, Data = 0x1
+2017-06-26 09:29:40.809 [INFO] WriteDWord: Adress = 0x504, Data = 0x0
+2017-06-26 09:29:40.809 [INFO] WriteDWord: Adress = 0x504, Data = 0x1
+2017-06-26 09:29:40.809 [INFO] WriteDWord: Adress = 0x5b4, Data = 0x80

@@ -1,0 +1,80 @@
+﻿生成启动时间为 2017/6/29 10:02:08。
+     1>项目“F:\文件备份\DAQ_VS10\DAQ_Panal\DAQ_Panal.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\DAQ_Panal.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\DAQ_Panal.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AboveStatusWnd.cpp BelowStatusWnd.cpp DaqControl.cpp DAQ_Panal.cpp DAQ_PanalDoc.cpp DAQ_PanalView.cpp DataChoose.cpp FileLogger.cpp Global.cpp LeftStatusWnd.cpp MainFrm.cpp MyButton.cpp RightStatusWnd.cpp WaveCanvas.cpp
+         WaveCanvas.cpp
+         RightStatusWnd.cpp
+         MyButton.cpp
+         MainFrm.cpp
+         LeftStatusWnd.cpp
+         Global.cpp
+         FileLogger.cpp
+     1>f:\文件备份\daq_vs10\daq_panal\filelogger.cpp(59): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(346) : 参见“_vsnprintf”的声明
+     1>f:\文件备份\daq_vs10\daq_panal\filelogger.cpp(66): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : 参见“sprintf”的声明
+     1>f:\文件备份\daq_vs10\daq_panal\filelogger.cpp(88): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : 参见“strcpy”的声明
+     1>f:\文件备份\daq_vs10\daq_panal\filelogger.cpp(96): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : 参见“strcpy”的声明
+     1>f:\文件备份\daq_vs10\daq_panal\filelogger.cpp(102): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : 参见“sprintf”的声明
+     1>f:\文件备份\daq_vs10\daq_panal\filelogger.cpp(108): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : 参见“strcpy”的声明
+     1>f:\文件备份\daq_vs10\daq_panal\filelogger.cpp(114): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : 参见“strcpy”的声明
+     1>f:\文件备份\daq_vs10\daq_panal\filelogger.cpp(115): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : 参见“strcat”的声明
+     1>f:\文件备份\daq_vs10\daq_panal\filelogger.cpp(143): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : 参见“strcpy”的声明
+     1>f:\文件备份\daq_vs10\daq_panal\filelogger.cpp(144): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : 参见“strcat”的声明
+     1>f:\文件备份\daq_vs10\daq_panal\filelogger.cpp(182): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : 参见“strcpy”的声明
+     1>f:\文件备份\daq_vs10\daq_panal\filelogger.cpp(183): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : 参见“strcat”的声明
+     1>f:\文件备份\daq_vs10\daq_panal\filelogger.cpp(268): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : 参见“sprintf”的声明
+     1>f:\文件备份\daq_vs10\daq_panal\filelogger.cpp(273): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : 参见“sprintf”的声明
+     1>f:\文件备份\daq_vs10\daq_panal\filelogger.cpp(278): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : 参见“sprintf”的声明
+         DataChoose.cpp
+         DAQ_PanalView.cpp
+         DAQ_PanalDoc.cpp
+         DAQ_Panal.cpp
+         DaqControl.cpp
+         BelowStatusWnd.cpp
+         AboveStatusWnd.cpp
+         正在生成代码...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /IDebug\ /nologo /fo"Debug\DAQ_Panal.res" DAQ_Panal.rc 
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\文件备份\DAQ_VS10\Debug\DAQ_Panal.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\Debug DAQ_PlxDll.lib /MANIFEST /ManifestFile:"Debug\DAQ_Panal.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\文件备份\DAQ_VS10\Debug\DAQ_Panal.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\文件备份\DAQ_VS10\Debug\DAQ_Panal.lib" /MACHINE:X86 Debug\DAQ_Panal.res
+         Debug\AboveStatusWnd.obj
+         Debug\BelowStatusWnd.obj
+         Debug\DaqControl.obj
+         Debug\DAQ_Panal.obj
+         Debug\DAQ_PanalDoc.obj
+         Debug\DAQ_PanalView.obj
+         Debug\DataChoose.obj
+         Debug\FileLogger.obj
+         Debug\Global.obj
+         Debug\LeftStatusWnd.obj
+         Debug\MainFrm.obj
+         Debug\MyButton.obj
+         Debug\RightStatusWnd.obj
+         Debug\stdafx.obj
+         Debug\WaveCanvas.obj
+     1>AboveStatusWnd.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/OPT:LBR”规范)
+     1>LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+         DAQ_Panal.vcxproj -> F:\文件备份\DAQ_VS10\Debug\DAQ_Panal.exe
+       Manifest:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\mt.exe /nologo /verbose /out:"F:\文件备份\DAQ_VS10\Debug\DAQ_Panal.exe.manifest" /manifest Debug\DAQ_Panal.exe.intermediate.manifest "D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest"
+     1>已完成生成项目“F:\文件备份\DAQ_VS10\DAQ_Panal\DAQ_Panal.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:20.57

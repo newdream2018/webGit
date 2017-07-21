@@ -1,0 +1,59 @@
+﻿Build started 2017-6-11 14:18:42.
+     1>Project "G:\Backup\2017项目相关\DAQ_VS10\DAQ_PlxDll\DAQ_PlxDll.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\DAQ_PlxDll.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Release\DAQ_PlxDll.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D DAQ_PLXDLL_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ConsFunc.cpp DAQ_PlxDll.cpp DllMain.cpp PlxInit.cpp Sinx.cpp StdAfx.cpp
+         ConsFunc.cpp
+     1>ConsFunc.cpp(449): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'vsprintf'
+         DAQ_PlxDll.cpp
+     1>DAQ_PlxDll.cpp(471): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(246) : see declaration of 'stricmp'
+     1>DAQ_PlxDll.cpp(484): warning C4800: 'ViBoolean' : forcing value to bool 'true' or 'false' (performance warning)
+     1>DAQ_PlxDll.cpp(553): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>DAQ_PlxDll.cpp(557): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>DAQ_PlxDll.cpp(564): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>DAQ_PlxDll.cpp(571): warning C4244: '=' : conversion from 'double' to 'ViInt32', possible loss of data
+     1>DAQ_PlxDll.cpp(601): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>DAQ_PlxDll.cpp(605): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>DAQ_PlxDll.cpp(612): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>DAQ_PlxDll.cpp(630): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(246) : see declaration of 'stricmp'
+     1>DAQ_PlxDll.cpp(1109): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _stricmp. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\string.h(246) : see declaration of 'stricmp'
+         DllMain.cpp
+         PlxInit.cpp
+     1>PlxInit.cpp(159): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(304) : see declaration of 'scanf'
+         Sinx.cpp
+     1>Sinx.cpp(14): warning C4244: '=' : conversion from 'ViInt32' to 'ViByte', possible loss of data
+         StdAfx.cpp
+         Generating Code...
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\Backup\2017项目相关\DAQ_VS10\Release\DAQ_PlxDll.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib PlxApi.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"Exports.def" /MANIFEST /ManifestFile:"Release\DAQ_PlxDll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\Backup\2017项目相关\DAQ_VS10\Release\DAQ_PlxDll.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\Backup\2017项目相关\DAQ_VS10\Release\DAQ_PlxDll.lib" /MACHINE:X86 /DLL Release\ConsFunc.obj
+         Release\DAQ_PlxDll.obj
+         Release\DllMain.obj
+         Release\PlxInit.obj
+         Release\Sinx.obj
+         Release\StdAfx.obj
+            Creating library G:\Backup\2017项目相关\DAQ_VS10\Release\DAQ_PlxDll.lib and object G:\Backup\2017项目相关\DAQ_VS10\Release\DAQ_PlxDll.exp
+         DAQ_PlxDll.vcxproj -> G:\Backup\2017项目相关\DAQ_VS10\Release\DAQ_PlxDll.dll
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"G:\Backup\2017项目相关\DAQ_VS10\Release\DAQ_PlxDll.dll;#2" /manifest Release\DAQ_PlxDll.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\DAQ_PlxDll.unsuccessfulbuild".
+         Touching "Release\DAQ_PlxDll.lastbuildstate".
+     1>Done Building Project "G:\Backup\2017项目相关\DAQ_VS10\DAQ_PlxDll\DAQ_PlxDll.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.15
