@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3属性：box-shadow测试</title>
+    <script type="text/javascript" src="./../框架库函数/jquery-3.2.0.js">
+    </script>
+    <style>
+        .box-shadow-1 {
+            box-shadow: 3px 3px 3px;
+        }
+        
+        .box-shadow-2 {
+            box-shadow: 0 0 10px #0CC;
+        }
+        
+        .box-shadow-3 {
+            box-shadow: 0 0 10px rgba(0, 204, 204, .5);
+        }
+        
+        .box-shadow-4 {
+            box-shadow: 0 0 10px 15px #0CC;
+            /*加了15px的阴影扩展半径*/
+        }
+        
+        .box-shadow-5 {
+            box-shadow: 0 0 10px #0CC inset;
+        }
+        
+        .box-shadow-6 {
+            box-shadow: -10px 0 10px red, /*左边阴影*/
+            10px 0 10px yellow, /*右边阴影*/
+            0 -10px 10px blue, /*顶部阴影*/
+            0 10px 10px green;
+            /*底边阴影*/
+        }
+        
+        .box-shadow-7 {
+            box-shadow: 0 0 10px 5px black, 0 0 10px 20px red;
+            /*当给同一个元素使用多个阴影属性时，需要注意它的顺序，最先写的阴影将显示在最顶层*/
+        }
+        
+        .box-shadow-8 {
+            box-shadow: 0 0 10px 20px red, 0 0 10px 5px black;
+            /*将只显示红色的阴影效果，因为红色阴影层在上面，模糊半径大，将后面的黑色阴影完全遮挡*/
+        }
+        
+        .obj {
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            padding: 20px;
+            /*border: 1px solid #e64dcf;*/
+            background: #eee;
+        }
+        /*.outer {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        
+        .inner {
+            width: 60px;
+            height: 60px;
+            background-color: red;
+            -webkit-box-shadow: 50px 50px blue;
+            -moz-box-shadow: 50px 50px blue;
+            box-shadow: 50px 50px blue;
+        }*/
+    </style>
+
+    <script type="text/javascript" src="./../框架库函数/jquery-3.2.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                $("div").toggle(1000);
+                // alert("sd");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <input type="button" value="JQ功能测试" id="btn1">
+    <div class="obj box-shadow-1"></div>
+    <!--<div class="outer">
+        <div class="inner"></div>
+    </div>-->
+    <div class="obj box-shadow-2"></div>
+    <div class="obj box-shadow-3"></div>
+    <div class="obj box-shadow-4"></div>
+    <div class="obj box-shadow-5"></div>
+    <div class="obj box-shadow-6"></div>
+    <div class="obj box-shadow-7"></div>
+    <div class="obj box-shadow-8"></div>
+</body>
+
+</html>

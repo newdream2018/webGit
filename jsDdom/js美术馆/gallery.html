@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="./ShowPic.js"></script>
+    <link rel="stylesheet" type="text/css" href="./picStyle.css">
+    <script type="text/javascript">
+        // window.onload ＝ functionName;   注意:没有括号-----函数无参数时
+        //若有参数时functionName(a)，IE:  window.attachEvent("onload",function(){functionName(a)});  
+        //FF:  window.addEventListener("onload", function(){functionName(a)}, useCapture);
+
+        //*********************************************
+        window.onload = function() { //匿名函数，调用有参函数
+            // var ulChind = countParentNodeChildren("ul", 1);
+            // alert(ulChind.length);
+
+            //给每个a标签添加事件，实现行为，样式，结构分离的写法
+            var ulImg = document.getElementById("picList");
+            var aList = ulImg.getElementsByTagName("a");
+            for (var i = 0; i < aList.length; i++) {
+                aList[i].onclick = function() {
+                    showPic(this);
+                    return false;
+                };
+            }
+        };
+        //*********************************************
+    </script>
+</head>
+
+<body>
+    <h2>诗词图片</h2>
+    <ul id="picList">
+        <li><a href="./images/泊秦淮-杜牧.jpg" title="泊秦淮-杜牧">泊秦淮-杜牧</a></li>
+        <li><a href="./images/雨铃霖-柳永.jpg" title="雨铃霖-柳永">雨铃霖-柳永</a></li>
+        <li><a href="./images/青玉案-辛弃疾.jpg" title="青玉案-辛弃疾">青玉案-辛弃疾</a></li>
+        <li><a href="./images/一剪梅-李清照.jpg" title="一剪梅-李清照">一剪梅-李清照</a></li>
+        <li><a href="./images/卜算子-李之仪.jpg" title="卜算子-李之仪">卜算子-李之仪</a></li>
+    </ul>
+    <img id="placeholder" src="./images/江城子-苏轼.jpg" alt="江城子-苏轼">
+    <p id="description">江城子-苏轼</p>
+</body>
+
+</html>

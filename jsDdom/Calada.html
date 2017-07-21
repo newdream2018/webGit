@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 200px;
+            background: #ccc;
+            margin: 10px 0;
+        }
+    </style>
+
+    <script>
+        window.onload = function() {
+            var oBtn = document.getElementById("btn1");
+            var oText = document.getElementById("text1");
+            var oDiv = document.getElementById("div1");
+
+            oBtn.onclick = function() {
+                var textValue = oText.value;
+                oDiv.innerHTML = textValue;
+            };
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="text1">
+    <input type="button" value="设置文字" id="btn1">
+    <div id="div1">
+    </div>
+</body>
+
+
+</html>

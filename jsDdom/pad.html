@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <title>padding_CSS参考手册_web前端开发参考手册系列</title>
+    <meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com" />
+    <meta name="copyright" content="www.doyoe.com" />
+    <script type="text/javascript" src="./myjs.js"></script>
+    <style>
+        .test {
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        
+        .active {
+            width: 400px;
+            height: 400px;
+            background: green;
+        }
+        
+        #content {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            margin: 50px;
+        }
+    </style>
+
+    <script>
+        window.onload = function() {
+            // changeDivStyle();
+            var oDiv = document.getElementsByTagName("div")[0];
+
+            oDiv.onclick = changeDivStyle;
+            oDiv.onmouseover = changeDivStyle;
+            oDiv.onmouseout = changeDivStyle;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="test">
+        <div id="content"></div>
+    </div>
+</body>

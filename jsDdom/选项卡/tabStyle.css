@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin-top: 50px;
+    font-size: 12px;
+    background: #f0fcff;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+#tab {
+    width: 490px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    /*background: red;*/
+    /*border: 1px solid green;*/
+    background: url("./images/tab_bg.gif") repeat-y -490px 0;
+}
+
+#tab .nav {
+    position: relative;
+    z-index: 2;
+}
+
+#tab .nav ul {
+    width: 480px;
+    height: 44px;
+    border: 1px solid #d4d4d4;
+    background: url("./images/nav_bg.gif") repeat-x 0 -44px;
+}
+
+#tab .nav ul li {
+    float: left;
+    height: 44px;
+    line-height: 44px;
+    font-family: arial;
+    border: 1px solid #d4d4d4;
+}
+
+#tab .nav ul li a {
+    float: left;
+    height: 44px;
+    text-decoration: none;
+    color: #999;
+    padding: 0 20px;
+}
+
+#tab .nav ul li a:hover {
+    background: url("./images/nav_bg.gif") repeat-x 0 0;
+}
+
+#tab .nav .active {
+    background: url(images/nav_bg.gif) repeat-x 0 -88px;
+}
+
+#tab .nav .active a {
+    background: url(images/ico.gif) no-repeat center bottom;
+    color: #333;
+    font-weight: bold;
+}
+
+#tab .nav .active a:hover {
+    background: url(images/ico.gif) no-repeat center bottom;
+}
+
+#tab .more {
+    font-family: "宋体";
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    color: #999;
+    text-decoration: none;
+}
+
+#tab .more:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    right: 18px;
+}
+
+#tab .content {
+    position: relative;
+    z-index: 2;
+    width: 484px;
+    overflow: hidden;
+    margin-left: 1px;
+}
+
+#tab .box {
+    width: 444px;
+    padding: 20px;
+    overflow: hidden;
+    display: none;
+}
+
+#tab .pic {
+    padding: 7px 0 0 7px;
+    width: 189px;
+    height: 115px;
+    background: url("./images/pic_bg.jpg") no-repeat;
+    float: left;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        input {
+            background: #ffffff;
+            border: 1px solid red;
+        }
+        
+        .active {
+            background: yellow;
+        }
+        
+        div {
+            width: 200px;
+            height: 200px;
+            background: gray;
+            padding: 10px;
+            margin: 2px;
+            display: none;
+            border: 2px solid red;
+            border-radius: 25px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var oBtn = document.getElementsByTagName("input");
+            var oDiv = document.getElementsByTagName("div");
+
+            for (var i = 0; i < oBtn.length; i++) {
+
+                oBtn[i].index = i; //为每个按钮添加一个索引值
+
+                oBtn[i].onclick = function() {
+
+                    for (var j = 0; j < oBtn.length; j++) {
+                        oBtn[j].className = "";
+                        oDiv[j].style.display = "none";
+                    }
+
+                    this.className = "active";
+                    oDiv[this.index].style.display = "block";
+                };
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <input class="active" type="button" value="1">
+    <input type="button" value="2">
+    <input type="button" value="3">
+
+    <div style="display:block;">111</div>
+    <div>222</div>
+    <div>333</div>
+</body>
+
+</html>
